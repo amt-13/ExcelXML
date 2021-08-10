@@ -65,7 +65,7 @@ int main(int argc, char *argv[])
             xmlworkbook.setStyleToCell(16,5,iStyle);
         }
     }
-	xmlworkbook.save("C:\\Tamil\\demo.xml");
+	xmlworkbook.save("C:\\demo.xml");
 	
 	return 0;
 
