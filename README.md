@@ -1,5 +1,5 @@
-# ExcelXML
-ExcelXML Library to Create XML File with Excel Tags
+# Excel XML
+Excel XML Library to write XML File for the excel with Formats
 
 
 Sample Result on Excel:
