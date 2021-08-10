@@ -10,4 +10,4 @@ Sample Result on Excel:
 
 
 Reference 
-Thank to the Project of hilip R. Braica (HoshiKata@aol.com, VeryMadSci@gmail.com) from http://www.codeproject.com/info/cpol10.aspx
+Thank to the Project of hilip R. Braica from codeProjects
