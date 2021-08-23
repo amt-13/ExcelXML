@@ -7,7 +7,7 @@
 
 #include<QMap>
 
-class LIBABASHARED_EXPORT ExcelXMLCellStyle
+class ExcelXMLCellStyle
 {
 public:
     ExcelXMLCellStyle();
@@ -88,7 +88,7 @@ public:
     int mTextRotate = 0;
 };
 
-class LIBABASHARED_EXPORT ExcelXML
+class ExcelXML
 {
 
 public:
