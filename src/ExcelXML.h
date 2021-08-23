@@ -8,9 +8,6 @@
 #include<QMap>
 #include "libaba_global.h"
 
-namespace ABA
-{
-
 class LIBABASHARED_EXPORT ExcelXMLCellStyle
 {
 public:
@@ -191,5 +188,4 @@ private:
 
 };
 
-} // namespace ABA
 #endif // EXCELXML_H
