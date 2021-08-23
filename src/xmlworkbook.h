@@ -46,7 +46,7 @@ public:
     XMLSTR Borders;        ///< see setBorders
     XMLSTR Interior;       ///< ss:Color=\"#FFFF00\" ss:Pattern=\"Solid\"
     XMLSTR NumberFormat;
-    XMLSTR Protection;
+    XMLSTR Protection;    
 
     enum HorizontalAlignment
     {
@@ -111,7 +111,10 @@ public:
     void setAlignment
         (
             HorizontalAlignment hAlign = AlignHLeft,       ///< AlignHLeft.
-            VerticalAlignment vAlign = AlignVBottom    ///< AlignVTop.
+            VerticalAlignment vAlign = AlignVBottom,    ///< AlignVTop.
+            bool mWrapText = false,                      ///< Text Wrap.
+            int mTextRotate = 0
+
         );
 
     bool operator== (XmlStyle& s1);
@@ -127,7 +130,9 @@ public:
     XMLSTR Type;       ///< String or Number
     XMLSTR Value;      ///< Contents.
     XMLSTR Formula;    ///< SUM(RC[-1]:R[3]C[-1])
-    size_t Index;      ///< Auto increment is zero, else the column, A=1, B=2, etc.       
+    size_t Index;      ///< Auto increment is zero, else the column, A=1, B=2, etc.
+    size_t mergeCols = 0; ///< ss:MergeAcross="3"
+    size_t mergeRows = 0; ///< ss:MergeAcross="3"
 
     // Primary functions.
     XMLCell();              ///< Constructor.

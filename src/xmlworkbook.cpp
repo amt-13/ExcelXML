@@ -121,7 +121,7 @@ void XmlStyle::setBorders
 }
 
 void XmlStyle::setAlignment(XmlStyle::HorizontalAlignment hAlign,
-                            XmlStyle::VerticalAlignment vAlign)
+                            XmlStyle::VerticalAlignment vAlign, bool mWrapText, int mTextRotate)
 {
     std::stringstream s;
 
@@ -140,6 +140,12 @@ void XmlStyle::setAlignment(XmlStyle::HorizontalAlignment hAlign,
         s << "ss:Vertical=\"Center\"";
     else if (vAlign == AlignVTop)
         s << "ss:Vertical=\"Top\"";
+
+    if(mWrapText)
+        s << " ss:WrapText=\"1\"";
+
+    if(mTextRotate > 0)
+        s << " ss:Rotate=\"" << mTextRotate << "\"";
 
     Alignment = s.str();
 }
@@ -189,6 +195,9 @@ const XMLSTR XMLCell::xml()
     {
         rv << "    <Cell ss:Index=\"" << Index << "\"";
     }
+
+    if (mergeCols > 0)     rv << " ss:MergeAcross=\"" << mergeCols << "\"";
+    if (mergeRows > 0)     rv << " ss:MergeDown=\"" << mergeRows << "\"";
     if (!Style.empty())     rv << " ss:StyleID=\"" << Style << "\"";
     if (!Formula.empty())   rv << " ss:Formula=\"=" << Formula << "\"";
     rv << "><Data ss:Type=\"" << Type << "\">" << Value << "</Data></Cell>" << eol;    
