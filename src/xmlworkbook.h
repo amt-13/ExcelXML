@@ -27,15 +27,13 @@
 #include <string>
 #include <vector>
 
-#include "libaba_global.h"
-
 /// Define XMLSTR as std::string, save some typing and allow
 /// some easy porting, say to QString or your own companies 
 /// string wrapper.
-typedef LIBABASHARED_EXPORT std::string XMLSTR;
+typedef std::string XMLSTR;
 
 /// A Cell style.
-class LIBABASHARED_EXPORT XmlStyle
+class XmlStyle
 {
 public:
     // Data.
@@ -122,7 +120,7 @@ public:
 };
 
 /// cell in row.
-class LIBABASHARED_EXPORT XMLCell
+class XMLCell
 {
 public:
     // Data.
@@ -162,7 +160,7 @@ public:
 };
 
 /// Row in table.
-class LIBABASHARED_EXPORT XMLRow
+class XMLRow
 {
 public:
     // Data.
@@ -175,7 +173,7 @@ public:
 };
 
 /// Table in worksheet.
-class LIBABASHARED_EXPORT XMLTable
+class XMLTable
 {
 public:
     // Data.
@@ -196,7 +194,7 @@ public:
 };
 
 /// A worksheet structure.
-class LIBABASHARED_EXPORT XMLWorkSheet
+class XMLWorkSheet
 {
 public:
     // Data.
@@ -226,7 +224,7 @@ public:
 };
 
 /// A workbook.
-class LIBABASHARED_EXPORT XmlWorkBook
+class XmlWorkBook
 {
 public:
     // Data.
