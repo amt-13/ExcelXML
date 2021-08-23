@@ -4,9 +4,6 @@
 
 #include <QDebug>
 
-namespace ABA
-{
-
 ExcelXML::ExcelXML()
 {
     mExcelXMLWorkSheets.clear();
@@ -404,4 +401,3 @@ ExcelXMLCellStyle::~ExcelXMLCellStyle()
 
 }
 
-} // namespace ABA
