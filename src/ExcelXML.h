@@ -6,7 +6,6 @@
 #include "xmlworkbook.h"
 
 #include<QMap>
-#include "libaba_global.h"
 
 class LIBABASHARED_EXPORT ExcelXMLCellStyle
 {
